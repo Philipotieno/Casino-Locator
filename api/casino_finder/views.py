@@ -14,3 +14,4 @@ class ListCreateCasinos(generics.ListCreateAPIView):
         longitude = g.latlng[1]
         pnt = 'POINT(' + str(longitude) + ' ' + str(latitude) + ')'
         serializer.save(location=pnt)
+        
